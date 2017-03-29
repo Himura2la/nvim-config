@@ -1,0 +1,4 @@
+```bash
+$ pwd
+~/.config/nvim/
+```
