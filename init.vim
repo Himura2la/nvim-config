@@ -1,14 +1,18 @@
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
 
-call plug#begin('~/.local/share/nvim/plugged')
-
-Plug 'itchyny/lightline.vim'
-
-call plug#end()
-
-set background=dark
 colorscheme desert
+set background=dark
 
+set relativenumber
+set number
+set numberwidth=2
+
+set clipboard=unnamed
+
+
+call plug#begin('~/.local/share/nvim/plugged')
+    Plug 'itchyny/lightline.vim'
+call plug#end()
 
 let g:lightline = {
       \ 'colorscheme': 'wombat',
