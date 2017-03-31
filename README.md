@@ -8,3 +8,11 @@ $ pwd
 
 * [Powerline fonts](https://github.com/powerline/fonts)
 * [vim-plug](https://github.com/junegunn/vim-plug)
+
+# Tips
+
+## Reload config
+
+```vim
+:so %
+```
