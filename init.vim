@@ -13,6 +13,7 @@ set smartcase
 nnoremap <silent> <esc> :noh<cr><esc>
 
 nnoremap <Bslash> d$
+inoremap <C-BS> <C-W>
 
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
