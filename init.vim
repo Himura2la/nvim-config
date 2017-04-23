@@ -1,5 +1,3 @@
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
-
 colorscheme desert
 set background=dark
 
@@ -23,6 +21,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'matze/vim-move' " Alt+j, Alt+k
     Plug 'sickill/vim-pasta' " Context-aware indent on paste
     Plug 'justinmk/vim-sneak' " ,<-[s{ch}{ch}]->; ret:[``]
+    Plug 'tpope/vim-fugitive' " :Gw, :Gcommit -m 'message', :Gpush
 call plug#end()
 
 let g:airline#extensions#tabline#enabled = 1
