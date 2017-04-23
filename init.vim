@@ -5,6 +5,7 @@ set relativenumber
 set number
 set numberwidth=2
 
+"# apt install xclip
 set clipboard=unnamed
 
 set ignorecase
@@ -15,6 +16,7 @@ nnoremap <Bslash> d$
 
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
+"$ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 call plug#begin('~/.local/share/nvim/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'terryma/vim-smooth-scroll'
