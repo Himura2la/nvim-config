@@ -1,5 +1,3 @@
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
-
 colorscheme desert
 set background=dark
 
@@ -7,6 +5,7 @@ set relativenumber
 set number
 set numberwidth=2
 
+"# apt install xclip
 set clipboard=unnamed
 
 set ignorecase
@@ -14,16 +13,19 @@ set smartcase
 nnoremap <silent> <esc> :noh<cr><esc>
 
 nnoremap <Bslash> d$
-set so=10
+inoremap <C-BS> <C-W>
 
+set so=10
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
+"$ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 call plug#begin('~/.local/share/nvim/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'terryma/vim-smooth-scroll'
     Plug 'matze/vim-move' " Alt+j, Alt+k
     Plug 'sickill/vim-pasta' " Context-aware indent on paste
     Plug 'justinmk/vim-sneak' " ,<-[s{ch}{ch}]->; ret:[``]
+    Plug 'tpope/vim-fugitive' " :Gw, :Gcommit -m 'message', :Gpush
 call plug#end()
 
 let g:airline#extensions#tabline#enabled = 1
