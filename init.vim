@@ -17,6 +17,7 @@ inoremap <C-BS> <C-W>
 
 set so=10
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+set guicursor= " https://github.com/neovim/neovim/issues/6041
 
 "$ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 call plug#begin('~/.local/share/nvim/plugged')
