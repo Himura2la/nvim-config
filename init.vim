@@ -14,6 +14,7 @@ set smartcase
 nnoremap <silent> <esc> :noh<cr><esc>
 
 nnoremap <Bslash> d$
+set so=10
 
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
