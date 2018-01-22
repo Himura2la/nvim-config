@@ -14,6 +14,7 @@ set so=10
 inoremap <C-BS> <C-W>  " Ctrl-Backspace
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
+" PS >
 " md ~\AppData\Local\nvim\autoload
 " $uri = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 " (New-Object Net.WebClient).DownloadFile(
@@ -22,7 +23,6 @@ set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 "     "~\AppData\Local\nvim\autoload\plug.vim"
 "   )
 " )
-
 call plug#begin('~\AppData\Local\nvim\plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'terryma/vim-smooth-scroll'
@@ -38,4 +38,3 @@ noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 1)<CR>
 noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 1)<CR>
 noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 0, 1)<CR>
 noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 1)<CR>
-
