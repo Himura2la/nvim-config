@@ -1,5 +1,3 @@
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
-
 colorscheme desert
 set background=dark
 
@@ -7,14 +5,18 @@ set relativenumber
 set number
 set numberwidth=2
 
-set clipboard=unnamed
+set clipboard=unnamed  "# apt install xclip
 
 set ignorecase
 set smartcase
 nnoremap <silent> <esc> :noh<cr><esc>
 
+set so=10
+inoremap <C-BS> <C-W>  " Ctrl-Backspace
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+set guicursor= " https://github.com/neovim/neovim/issues/6041
 
+"$ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 call plug#begin('~/.local/share/nvim/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'terryma/vim-smooth-scroll'
