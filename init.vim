@@ -1,7 +1,6 @@
 colorscheme desert
 set background=dark
 
-set relativenumber
 set number
 set numberwidth=2
 
