@@ -11,7 +11,8 @@ set smartcase
 nnoremap <silent> <esc> :noh<cr><esc>
 
 set so=10
-inoremap <C-BS> <C-W>  " Ctrl-Backspace
+" Ctrl-Backspace
+inoremap <C-BS> <C-W>
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 set guicursor= " https://github.com/neovim/neovim/issues/6041
 
