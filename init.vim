@@ -10,6 +10,9 @@ set ignorecase
 set smartcase
 nnoremap <silent> <esc> :noh<cr><esc>
 
+nnoremap j gj
+nnoremap k gk
+
 set so=10
 " Ctrl-Backspace
 inoremap <C-BS> <C-W>
