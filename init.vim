@@ -13,7 +13,7 @@ nnoremap <silent> <esc> :noh<cr><esc>
 nnoremap j gj
 nnoremap k gk
 
-set so=10
+set so=20
 " Ctrl-Backspace
 inoremap <C-BS> <C-W>
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
@@ -25,6 +25,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'terryma/vim-smooth-scroll'
     Plug 'matze/vim-move' " Alt+j, Alt+k
     Plug 'sickill/vim-pasta' " Context-aware indent on paste
+    Plug 'tpope/vim-fugitive' " :Gstatus :Gwrite :Gcommit :Glog
 call plug#end()
 
 let g:airline#extensions#tabline#enabled = 1
