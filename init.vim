@@ -4,7 +4,7 @@ set background=dark
 set number
 set numberwidth=2
 
-set clipboard=unnamed  "# apt install xclip
+set clipboard=unnamedplus  "# apt install xclip
 
 set ignorecase
 set smartcase
