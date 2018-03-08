@@ -4,7 +4,7 @@ set background=dark
 set number
 set numberwidth=2
 
-set clipboard=unnamed
+set clipboard=unnamedplus  " Run Neovim-Qt in its folder to use win32yank.exe
 
 set ignorecase
 set smartcase
