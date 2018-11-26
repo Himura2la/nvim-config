@@ -14,10 +14,10 @@ nnoremap j gj
 nnoremap k gk
 
 set so=99
+
 " Ctrl-Backspace
 inoremap <C-BS> <C-W>
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
-set guicursor= " https://github.com/neovim/neovim/issues/6041
 
 "$ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 call plug#begin('~/.local/share/nvim/plugged')
@@ -28,8 +28,8 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'tpope/vim-fugitive' " :Gstatus :Gwrite :Gcommit :Glog
 call plug#end()
 
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
+" let g:airline#extensions#tabline#enabled = 1
+" let g:airline_powerline_fonts = 1
 
 " vim-smooth-scroll
 noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 50, 1)<CR>
